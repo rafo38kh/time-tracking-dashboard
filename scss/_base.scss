@@ -8,7 +8,7 @@ $color--selfCare: hsl(43, 84%, 65%);
 
 $color--veryDarkBlue: hsl(226, 43%, 10%);
 $color--DarkBlue: hsl(235, 46%, 20%);
-$color--Desaturated: hsl(235, 45%, 61%);
+$color--: hsl(235, 45%, 61%);
 $color--Pale: hsl(236, 100%, 87%);
 
 $font-primary: "Open Sans", sans-serif;
@@ -36,6 +36,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
-  width: 100%;
   justify-items: center;
+  align-items: center;
+  width: 100%;
 }
