@@ -39,8 +39,7 @@ body {
     overflow: hidden; }
     @media (min-width: 570px) {
       .content__user-block {
-        grid-column-start: 1;
-        grid-column-end: 3; } }
+        grid-column: 1 / 3; } }
     @media (min-width: 1140px) {
       .content__user-block {
         grid-column: 1 / 2;
@@ -51,8 +50,9 @@ body {
       align-items: flex-start; } }
   @media (min-width: 1140px) {
     .content {
-      grid-template-columns: 22% 22% 22% 22%;
-      align-items: flex-start; } }
+      grid-template-columns: repeat(4, 1fr);
+      align-items: flex-end;
+      grid-gap: 2rem 2rem; } }
   .content__human-box {
     width: 100%;
     display: flex;
@@ -64,7 +64,8 @@ body {
     @media (min-width: 1140px) {
       .content__human-box {
         flex-direction: column;
-        align-items: flex-start; } }
+        align-items: flex-start;
+        padding: 4rem 2.5rem; } }
   .content__user-picture {
     width: 7rem;
     border: 0.2rem solid white;
@@ -119,7 +120,8 @@ body {
     background-color: #1c1f4a;
     border-radius: 1.5rem;
     padding: 3rem 2rem;
-    position: relative; }
+    position: relative;
+    transition: all 0.3s; }
     .content__card::before {
       content: "";
       width: 100%;
@@ -130,26 +132,53 @@ body {
       padding: 3rem;
       background-repeat: no-repeat;
       z-index: -1; }
+    .content__card:hover {
+      background-color: #33387a;
+      cursor: pointer; }
+    @media (min-width: 1140px) {
+      .content__card--work {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; } }
     .content__card--work::before {
       background-image: url(../images/icon-work.svg);
       background-color: #ff8c66;
       background-position: top -1.2rem right 1.5rem; }
+    @media (min-width: 1140px) {
+      .content__card--play {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; } }
     .content__card--play::before {
       background-image: url(../images/icon-play.svg);
       background-color: #56c2e6;
       background-position: top -1.2rem right 1.5rem; }
+    @media (min-width: 1140px) {
+      .content__card--study {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2; } }
     .content__card--study::before {
       background-image: url(../images/icon-study.svg);
       background-color: #ff5c7c;
       background-position: top -1.2rem right 1.5rem; }
+    @media (min-width: 1140px) {
+      .content__card--exercise {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3; } }
     .content__card--exercise::before {
       background-image: url(../images/icon-exercise.svg);
       background-color: #4acf81;
       background-position: top -1.2rem right 1.5rem; }
+    @media (min-width: 1140px) {
+      .content__card--social {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3; } }
     .content__card--social::before {
       background-image: url(../images/icon-social.svg);
       background-color: #7536d3;
       background-position: top -1.2rem right 1.5rem; }
+    @media (min-width: 1140px) {
+      .content__card--selfCare {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3; } }
     .content__card--selfCare::before {
       background-image: url(../images/icon-self-care.svg);
       background-color: #f1c65b;
@@ -162,6 +191,10 @@ body {
     @media (min-width: 1140px) {
       .content__title-wrapper {
         margin-bottom: 2rem; } }
+    .content__title-wrapper svg {
+      fill: #bbc0ff; }
+      .content__title-wrapper svg:hover {
+        fill: white; }
   @media (min-width: 1140px) {
     .content__title {
       font-size: 1.3rem; } }

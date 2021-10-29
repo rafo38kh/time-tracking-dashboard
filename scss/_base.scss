@@ -1,4 +1,4 @@
-$color-primary: hsl(246, 80%, 60%);
+$color--primary: hsl(246, 80%, 60%);
 $color--work: hsl(15, 100%, 70%);
 $color--play: hsl(195, 74%, 62%);
 $color--study: hsl(348, 100%, 68%);
@@ -7,9 +7,10 @@ $color--social: hsl(264, 64%, 52%);
 $color--selfCare: hsl(43, 84%, 65%);
 
 $color--veryDarkBlue: hsl(226, 43%, 10%);
-$color--DarkBlue: hsl(235, 46%, 20%);
-$color--Desaturated: hsl(235, 45%, 61%);
-$color--Pale: hsl(236, 100%, 87%);
+$color--darkBlue: hsl(235, 46%, 20%);
+$color--desaturated: hsl(235, 45%, 61%);
+$color--pale: hsl(236, 100%, 87%);
+$color--cardHover: hsl(236, 41%, 34%);
 
 $font-primary: "Open Sans", sans-serif;
 $font-secondary: "Rubik", sans-serif;
@@ -31,7 +32,6 @@ body {
   color: white;
   font-size: 1.6rem;
   font-family: $font-secondary;
-  // - Weights: 300, 400, 500
   background-color: $color--veryDarkBlue;
   min-height: 100vh;
   display: grid;
