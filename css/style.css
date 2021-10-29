@@ -113,9 +113,9 @@ body {
       .content__link {
         font-size: 1.5rem; } }
     .content__link:hover {
-      color: #bdc1ff; }
+      color: white; }
   .content__link-active {
-    color: #bdc1ff; }
+    color: white; }
   .content__card {
     background-color: #1c1f4a;
     border-radius: 1.5rem;
