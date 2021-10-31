@@ -7,7 +7,9 @@ const [dailyButton, weeklyButton, monthlyButton] = buttons;
 
 const getJson = async function () {
   try {
-    const data = await fetch("../data.json");
+    const data = await fetch(
+      "https://raw.githubusercontent.com/rafo38kh/time-tracking-dashboard/main/data.json"
+    );
     return await data.json();
   } catch (err) {
     console.error(`${err.message}`);
