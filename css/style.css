@@ -18,7 +18,6 @@ body {
   display: grid;
   grid-template-rows: 1fr auto;
   justify-items: center;
-  align-items: center;
   width: 100%; }
 
 .container {
@@ -32,6 +31,7 @@ body {
   margin: 10rem 0;
   display: grid;
   align-items: center;
+  justify-content: center;
   grid-gap: 6rem 2rem; }
   .content__user-block {
     background-color: #1c1f4a;
@@ -224,3 +224,15 @@ body {
     @media (min-width: 1140px) {
       .content__date {
         font-size: 1.1rem; } }
+
+.attribution {
+  width: 100%;
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  text-align: center;
+  margin-bottom: 5rem; }
+  .attribution__link:link, .attribution__link:visited {
+    text-transform: uppercase;
+    color: #5847eb;
+    transition: all 0.2s; }
+  .attribution__link:hover, .attribution__link:active {
+    color: #bdc1ff; }
