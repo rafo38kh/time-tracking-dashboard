@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/time-tracking-dashboard-with-vanilla-js-scss-and-bem-\_GvJdFUwN](https://www.frontendmentor.io/solutions/time-tracking-dashboard-with-vanilla-js-scss-and-bem-_GvJdFUwN)
 - Live Site URL: [https://rafo38kh.github.io/time-tracking-dashboard/#](https://rafo38kh.github.io/time-tracking-dashboard/#)
 
 ## My process
